@@ -29,9 +29,9 @@ import:
   - package: gopkg.in/check.v1
     ref:     11d3bc7aa68e238947792f30573146a3231fc0f1
   - package: golang.org/x/net
-    ref:     d9558e5c97f85372afee28cf2b6059d7d3818919
     subpackages:
       - context
+      - context/ctxhttp
   - package: github.com/gorilla/handlers
     ref:     40694b40f4a928c062f56849989d3e9cd0570e5f
   - package: github.com/docker/libkv
@@ -109,8 +109,6 @@ import:
     ref:     c7477ad8e330bef55bf1ebe300cf8aa67c492d1b
   - package: gopkg.in/yaml.v2
     ref:     7ad95dd0798a40da1ccdff6dff35fd177b5edf40
-  - package: github.com/opencontainers/runc
-    ref:     4ab132458fc3e9dbeea624153e0331952dc4c8d5
     subpackages:
       - libcontainer/user
   - package: github.com/gorilla/mux
@@ -161,4 +159,31 @@ import:
   - package: github.com/spf13/cobra
     subpackages:
     - /cobra
-
+  - package: github.com/opencontainers/runc
+  - package: k8s.io/kubernetes/pkg/api
+  - package: k8s.io/kubernetes/pkg/apis/extensions
+  - package: k8s.io/kubernetes/pkg/client/unversioned
+  - package: k8s.io/kubernetes/pkg/util
+  - package: k8s.io/kubernetes/pkg/fields
+  - package: k8s.io/kubernetes/pkg/labels
+  - package: github.com/blang/semver
+  - package: github.com/davecgh/go-spew/spew
+  - package: github.com/emicklei/go-restful/swagger
+  - package: github.com/ghodss/yaml
+  - package: github.com/google/cadvisor/info/v1
+  - package: github.com/google/gofuzz
+  - package: github.com/juju/ratelimit
+  - package: github.com/pborman/uuid
+  - package: github.com/prometheus/client_golang/prometheus
+  - package: github.com/ugorji/go/codec
+  - package: golang.org/x/crypto/ssh
+  - package: speter.net/go/exp/math/dec/inf
+  - package: github.com/beorn7/perks/quantile
+  - package: github.com/golang/protobuf/proto
+  - package: github.com/prometheus/client_model/go
+  - package: github.com/prometheus/common/expfmt
+  - package: github.com/prometheus/procfs
+  - package: github.com/matttproud/golang_protobuf_extensions/pbutil
+  - package: github.com/docker/go-units
+  - package: golang.org/x/build/kubernetes
+  - package: golang.org/x/build/kubernetes/api

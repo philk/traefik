@@ -31,6 +31,7 @@ type GlobalConfiguration struct {
 	Etcd                      *provider.Etcd
 	Zookeeper                 *provider.Zookepper
 	Boltdb                    *provider.BoltDb
+	Kubernetes                *provider.Kubernetes
 }
 
 // Certificates defines traefik certificates type
